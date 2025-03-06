@@ -44,16 +44,25 @@
         }
         button { 
             padding: 12px 20px; 
-            background-color: #28a745; 
             color: white; 
             border: none; 
             border-radius: 5px; 
             cursor: pointer; 
             font-size: 18px;
             transition: background 0.3s;
+            margin: 10px;
         }
-        button:hover {
+        .details-btn {
+            background-color: #28a745;
+        }
+        .details-btn:hover {
             background-color: #218838;
+        }
+        .buy-btn {
+            background-color: #ff4500;
+        }
+        .buy-btn:hover {
+            background-color: #d63f00;
         }
         .price-details { 
             display: none; 
@@ -83,7 +92,8 @@
         <img src="https://st.depositphotos.com/2760050/59285/i/450/depositphotos_592855366-stock-photo-presenting-cosmetic-product-unbranded-shampoo.jpg" alt="Shampoo Image">
         <p class="price">₹299</p>
         <p class="description">A natural and organic shampoo that nourishes your hair while keeping it soft and healthy.</p>
-        <button onclick="showDetails()">View Details</button>
+        <button class="details-btn" onclick="showDetails()">View Details</button>
+        <button class="buy-btn" onclick="buyNow()">Buy Now</button>
         <div class="price-details" id="details">
             <p><strong>Product Details:</strong></p>
             <ul>
@@ -103,6 +113,9 @@
     <script>
         function showDetails() {
             document.getElementById('details').style.display = 'block';
+        }
+        function buyNow() {
+            alert('This is a demo. Buy Now functionality coming soon!');
         }
     </script>
 </body>

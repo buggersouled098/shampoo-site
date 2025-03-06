@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shampoo Product Page</title>
+    <title>Pure Locks - Nature's Touch for Healthy Hair</title>
     <style>
         body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f8f9fa; }
         header {
@@ -83,9 +83,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        Organic Shampoo Store
-    </header>
+    <header>Pure Locks<br><small>Nature's Touch for Healthy Hair</small></header>
     
     <div class="container">
         <h2>Local Herbal Shampoo</h2>
@@ -107,6 +105,24 @@
     </div>
     
     <footer>
+    <div class="container">
+        <h2>Pure Locks Herbal Conditioner</h2>
+        <img src="https://st.depositphotos.com/2760050/59285/i/450/depositphotos_592855366-stock-photo-presenting-cosmetic-product-unbranded-shampoo.jpg" alt="Conditioner Image">
+        <p class="price">₹349</p>
+        <p class="description">A nourishing conditioner that enhances hair strength and shine while keeping it smooth and frizz-free.</p>
+        <button class="details-btn" onclick="showDetails2()">View Details</button>
+        <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+        <div class="price-details" id="details2">
+            <p><strong>Product Details:</strong></p>
+            <ul>
+                <li><strong>Size:</strong> 250ml</li>
+                <li><strong>Type:</strong> Herbal, Paraben-Free</li>
+                <li><strong>Benefits:</strong> Deeply nourishes, detangles, and reduces frizz</li>
+                <li><strong>Ingredients:</strong> Argan Oil, Shea Butter, Essential Oils</li>
+                <li><strong>Suitable for:</strong> All Hair Types</li>
+            </ul>
+        </div>
+    </div>
         &copy; 2025 Organic Shampoo Store | All rights reserved
     </footer>
     
@@ -118,5 +134,8 @@
             alert('This is a demo. Buy Now functionality coming soon!');
         }
     </script>
+        function showDetails2() {
+            document.getElementById('details2').style.display = 'block';
+        }
 </body>
 </html>

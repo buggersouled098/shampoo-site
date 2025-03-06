@@ -7,7 +7,7 @@
     <style>
         body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f8f9fa; }
         header {
-            background: #007bff;
+            background: #000000;
             color: white;
             text-align: center;
             padding: 15px;
@@ -83,12 +83,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>Pure Locks<br><small>Nature's Touch for Healthy Hair</small></header>
+    <header style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <img src="https://i.postimg.cc/wjgMpF02/IMG-5722.jpg" alt="Logo" style="height: 100px; width: auto;">
+        <div>Pure Locks<br><small>Nature's Touch for Healthy Hair</small></div>
+    </header>
     
     <div class="container">
-        <h2>Local Herbal Shampoo</h2>
-        <img src="https://st.depositphotos.com/2760050/59285/i/450/depositphotos_592855366-stock-photo-presenting-cosmetic-product-unbranded-shampoo.jpg" alt="Shampoo Image">
-        <p class="price">₹299</p>
+        <h2>Pure Locks Moisture Shampoo</h2>
+        <img src="https://i.etsystatic.com/21303021/r/il/16dc60/4292862702/il_1588xN.4292862702_g0hf.jpg" alt="Shampoo Image">
+        <p class="price">₹500</p>
         <p class="description">A natural and organic shampoo that nourishes your hair while keeping it soft and healthy.</p>
         <button class="details-btn" onclick="showDetails()">View Details</button>
         <button class="buy-btn" onclick="buyNow()">Buy Now</button>
@@ -106,13 +109,13 @@
     
     <footer>
     <div class="container">
-        <h2>Pure Locks Herbal Conditioner</h2>
-        <img src="https://st.depositphotos.com/2760050/59285/i/450/depositphotos_592855366-stock-photo-presenting-cosmetic-product-unbranded-shampoo.jpg" alt="Conditioner Image">
-        <p class="price">₹349</p>
+        <h2>Pure Locks Repair Shampoo</h2>
+        <img src="https://img.freepik.com/premium-psd/skincare-bottle-mockup-psd-beauty-products-minimal-design_53876-145066.jpg?w=1380" alt="Conditioner Image">
+        <p class="price">₹500</p>
         <p class="description">A nourishing conditioner that enhances hair strength and shine while keeping it smooth and frizz-free.</p>
         <button class="details-btn" onclick="showDetails2()">View Details</button>
         <button class="buy-btn" onclick="buyNow()">Buy Now</button>
-        <div class="price-details" id="details2">
+        <div class="price-details" id="details2" style="background: #d4edda; color: #155724;">
             <p><strong>Product Details:</strong></p>
             <ul>
                 <li><strong>Size:</strong> 250ml</li>
@@ -123,7 +126,11 @@
             </ul>
         </div>
     </div>
-        &copy; 2025 Organic Shampoo Store | All rights reserved
+        &copy; 2025 Organic Shampoo Store | All rights reserved<br><br>
+        <strong>Contact Us</strong><br>
+        26aditya.gupta@fostiima.org<br>
+        9219238734<br>
+        <strong>Pure Locks Team</strong>
     </footer>
     
     <script>
@@ -133,9 +140,10 @@
         function buyNow() {
             alert('This is a demo. Buy Now functionality coming soon!');
         }
-    </script>
         function showDetails2() {
-            document.getElementById('details2').style.display = 'block';
-        }
+        document.getElementById('details2').style.display = 'block';
+    }
+</script>
+        
 </body>
 </html>
